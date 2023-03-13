@@ -1,6 +1,5 @@
 package com.epg.user.manager.controllers;
 
-import com.epg.user.manager.models.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
