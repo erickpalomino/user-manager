@@ -18,7 +18,7 @@ public class AuthenticationService {
     @Autowired
     private UserRepository userRepository;
 
-    private BCryptPasswordEncoder encoder= new BCryptPasswordEncoder();
+    private final BCryptPasswordEncoder encoder= new BCryptPasswordEncoder();
 
     public void register(RegisterRequestDto registerDto) {
         System.out.println(registerDto);

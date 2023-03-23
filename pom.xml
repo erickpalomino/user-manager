@@ -9,10 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.epg</groupId>
-	<artifactId>myUserDetails-manager</artifactId>
+	<artifactId>user-manager</artifactId>
 	<version>0.1</version>
-	<name>myUserDetails.manager</name>
+	<name>user-manager</name>
 	<description>User Manager Microservice</description>
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

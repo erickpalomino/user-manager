@@ -26,7 +26,7 @@ public class AuthenticationController {
         authenticationService.register(registerDto);
         Map<String,String> response = new HashMap<>();
         response.put("message","User Registered");
-        return new ResponseEntity(response, null, HttpStatus.CREATED);
+        return new ResponseEntity<Object>(response, null, HttpStatus.CREATED);
     }
 
     @PostMapping("/login")
@@ -37,6 +37,6 @@ public class AuthenticationController {
         response.put("data", user);
         HttpHeaders header= new HttpHeaders();
         header.set("Authorization",String.format("Bearer %s",authenticationService.generateToken(user)));
-        return new ResponseEntity<>(response,header,HttpStatus.OK);
+        return new ResponseEntity<Object>(response,header,HttpStatus.OK);
     }
 }
